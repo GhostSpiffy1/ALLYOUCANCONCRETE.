@@ -2,108 +2,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>All You Can Concrete</title>
   <style>
     body { font-family: Arial, sans-serif; margin: 0; background: #f9f9f9; }
-    header {
-      background: #2b2b2b;
-      color: #fff;
-      padding: 60px 20px 50px;
-      text-align: center;
-    }
-    header img {
-      max-width: 100px;
-      margin-bottom: 20px;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 40px;
-    }
-    header p {
-      margin: 12px 0;
-      color: #ccc;
-    }
-    .quote-btn {
-      margin-top: 25px;
-      display: inline-block;
-      padding: 12px 24px;
-      background: #f9c000;
-      color: #000;
-      font-weight: bold;
-      text-decoration: none;
-      border-radius: 5px;
-    }
     .section { max-width: 1000px; margin: auto; padding: 40px 20px; }
     h2 { text-align: center; }
-    .services-grid {
-      display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      gap: 20px;
-    }
-    .services-grid div {
-      background: #fff;
-      padding: 20px;
-      border-radius: 10px;
-      text-align: center;
-    }
+    .services-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 20px; }
+    .services-grid div { background: #fff; padding: 20px; border-radius: 10px; text-align: center; }
+    .gallery-preview, .gallery { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; }
     .gallery-preview img, .gallery img {
-      width: 300px;
-      height: 200px;
-      object-fit: cover;
-      border-radius: 10px;
-      transition: transform 0.3s ease;
+      width: 300px; height: 200px; object-fit: cover;
+      border-radius: 10px; transition: transform 0.3s ease;
     }
     .gallery-preview img:hover, .gallery img:hover {
       transform: scale(1.05);
     }
-    iframe {
-      width: 100%;
-      height: 300px;
-      border: none;
-      margin-top: 20px;
-      border-radius: 10px;
-    }
-    form {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-      max-width: 600px;
-      margin: 30px auto 0;
-    }
+    iframe { width: 100%; height: 300px; border: none; margin-top: 20px; border-radius: 10px; }
+    form { display: flex; flex-direction: column; gap: 10px; max-width: 600px; margin: 30px auto 0; }
     input, textarea, select {
-      padding: 10px;
-      font-size: 16px;
-      border: 1px solid #ccc;
-      border-radius: 6px;
+      padding: 10px; font-size: 16px;
+      border: 1px solid #ccc; border-radius: 6px;
     }
     button {
-      padding: 10px;
-      background: #333;
-      color: white;
-      border: none;
-      border-radius: 6px;
-      cursor: pointer;
+      padding: 10px; background: #333; color: white;
+      border: none; border-radius: 6px; cursor: pointer;
     }
-  
-        @media (max-width: 600px) {
-          h1 {
-            font-size: 24px !important;
-            white-space: nowrap;
-          }
-        }
-        </style>
+  </style>
 </head>
+
 <body>
-  <header>
-    <img src="images/logo.png" alt="Logo">
-    <h1>All You Can Concrete</h1>
-    <p>Forming. Finishing. Foundations. Done Right.</p>
-    <p>Phone: +1 (437) 755-4262</p>
-    <p>Email: allyoucanconcrete@gmail.com</p>
-    <a href="#estimate" class="quote-btn">Request a Free Estimate</a>
+  <header style="background:#111; color:#fff; padding: 40px 20px; text-align:center;">
+    <img src="images/logo.png" alt="Logo" style="max-width: 100px; display: block; margin: 0 auto 10px;">
+    <h1 style="margin: 10px 0; font-size: 32px;">All You Can Concrete</h1>
+    <p style="margin: 5px 0; font-size: 16px; color: #ccc;">Forming. Finishing. Foundations. Done Right.</p>
+    <p style="margin: 5px 0;">Phone: +1 (437) 755-4262</p>
+    <p style="margin: 0;">Email: allyoucanconcrete@gmail.com</p>
+    <a href="#estimate" style="display:inline-block;margin-top:20px;padding:10px 20px;background:#f9c000;color:#000;text-decoration:none;border-radius:5px;font-weight:bold;">Request a Free Quote</a>
   </header>
+
 
   <div class="section">
     <h2>Our Services</h2>
@@ -116,7 +54,7 @@
 
   <div class="section">
     <h2>Project Showcase</h2>
-    <div class="gallery-preview" style="display:flex; justify-content:center; gap:40px;">
+    <div class="gallery-preview">
       <img src="images/project1.jpg" alt="Project 1">
       <img src="images/project2.jpg" alt="Project 2">
       <img src="images/project3.jpg" alt="Project 3">
@@ -161,9 +99,12 @@
     </form>
   </div>
 
+
   <footer style="background:#111; color:#aaa; text-align:center; padding:20px; font-size:14px;">
-    &copy; 2025 All You Can Concrete. All rights reserved.<br>
-    <a href="https://instagram.com/allyoucanconcrete" target="_blank" style="color:#aaa; text-decoration:underline;">Instagram</a>
+    &copy; 2025 All You Can Concrete. All rights reserved.
+    <br>
+    <a href="https://instagram.com/allyoucanconcrete" target="_blank" style="color:#aaa; text-decoration:underline; display:inline-block; margin-top:5px;">Instagram</a>
   </footer>
 </body>
+
 </html>
